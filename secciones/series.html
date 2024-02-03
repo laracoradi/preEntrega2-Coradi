@@ -3,50 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="../index.html" class="nav-link">HOME</a></li>
-                <li><a href="./cine.html" class="nav-link">CINE</a></li>
-                <li><a href="./series.html" class="nav-link">SERIES</a></li>
-                <li><a href="./quienes.html" class="nav-link">QUIENES SOMOS</a></li>
-                <li><a href="./contacto.html" class="nav-link">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+			<div class="container-fluid">
+			  <a class="navbar-brand ms-5" href="#"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <h1>Pop!Geek</h1>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto me-5">
+				  <li class="nav-item">
+					<a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./cine.html">CINE</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./series.html">SERIES</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./quienes.html">QUIENES SOMOS</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./contacto.html">CONTACTO</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
     </header>
 
-    <section class="container">
-        <h2>Titulo 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, perspiciatis? Corporis, velit impedit. Commodi nulla nobis velit? Facere beatae nobis error vero illo ipsum neque, architecto nam deserunt? Repudiandae, maxime!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quas eligendi ut incidunt magnam hic unde perspiciatis, cumque velit mollitia repellendus ipsum numquam illum ex. Ratione numquam reiciendis error quia.</p>
-        <article></article>
+    <main>
+      <section class="hero_2">
+        <article class="hero-content">
+        <h1 class="text-blue">CINCO SERIES QUE LLEGAN EN EL 2024</h1>
+        <p class="text-blue">Desde la segunda temporada de House Of The Dragon hasta uno de los spin-offs de The Walking Dead, un repaso por algunas de las series más esperadas de 2024.</p>
+        <button class="btn btn-primary">Ver</button>
+      </article>
+      </section>
+
+      <section class="row justify-content-around my-5">
+        <article class="col-12 py-5">
+            <h2 class="noticias text-center">Novedades</h2>
+        </article>
+        <article class="card col-md-4 my-5">
+            <img src="../img/smith.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SR. Y SRA. SMITH: DONALD GLOVER LE PIDIÓ CONSEJO A BRAD PITT</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary botonCompra">Leer más</a>
+            </div>
+        </article>
+        <article class="card col-md-4 my-5">
+            <img src="../img/feud.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">FEUD: TRAILER COMPLETO DE LA SEGUNDA TEMPORADA</h5>
+              <p class="card-text"> </p>
+              <a href="#" class="btn btn-primary botonCompra">Leer más</a>
+            </div>
+        </article>   
+        <article class="card col-md-4 my-5">
+            <img src="../img/harry.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HARRY POTTER PODRÍA TENER MÁS DE UNA SERIE</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary botonCompra">Leer más</a>
+            </div>
+        </article>     
     </section>
+    </main>
     
-    <footer class="main-footer">
-        <div class="padre">
-            <div class="navegacion">
-                <h4>NAVEGACION</h4>
-                <ul>
-                    <li>Home</li>
-                    <li>Cine</li>
-                    <li>Series</li>
-                    <li>Quienes Somos</li>
-                    <li>Contacto</li>
-                </ul>
-            </div>
-            <div class="redes">
-                <h4>REDES SOCIALES</h4>
-                <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>X</li>
-                </ul>
-            </div>
+    <footer>
+      <ul>
+        <li>
+          <a href="../index.html">INICIO</a>
+        </li>
+        <li>
+          <a href="./cine.html">CINE</a>
+        </li>
+        <li>
+          <a href="./series.html">SERIES</a>
+        </li>
+        <li>
+          <a href="./quienes.html">QUIENES SOMOS</a>
+        </li>
+        <li>
+          <a href="./contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+      <div class="footeRedes">
+        <div>
+          <img src="../img/facebook.webp.webp" alt="">
         </div>
+        <div>
+          <img src="../img/instagram.webp.webp" alt="">
+        </div>
+        <div>
+          <img src="../img/twitter.png.png" alt="">
+        </div>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

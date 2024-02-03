@@ -3,73 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="../index.html" class="nav-link">HOME</a></li>
-                <li><a href="./cine.html" class="nav-link">CINE</a></li>
-                <li><a href="./series.html" class="nav-link">SERIES</a></li>
-                <li><a href="./quienes.html" class="nav-link">QUIENES SOMOS</a></li>
-                <li><a href="./contacto.html" class="nav-link">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+			<div class="container-fluid">
+			  <a class="navbar-brand ms-5" href="#"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <h1>Pop!Geek</h1>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto me-5">
+				  <li class="nav-item">
+					<a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./cine.html">CINE</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./series.html">SERIES</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./quienes.html">QUIENES SOMOS</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./contacto.html">CONTACTO</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
     </header>
-    <section class="form">
-		<h1>Contactános</h1>
-	</section>
-	<section class="formulario">
-		<article>
-			<form action="#">
-                <label for="nombre">Nombre:
-				    <input type="text" placeholder="TU NOMBRE"><br>
-                </label>
-                <label for="apellido">Apellido:
-                    <input type="text" placeholder="TU APELLIDO"><br>
-                </label>
-                <label for="edad">Edad:
-                    <input type="number" placeholder="TU EDAD"><br>
-                </label>
-				<label for="email">Correo electronico:
-					<input type="email" placeholder="aaa@gmail.com" name="email"><br>
-				</label>
-                <label for="comentarios"> Deje su comentario:<br>
-					<textarea placeholder="comentarios"></textarea>
-				</label> <br>
-				
-				
-				</select>
-				<div>¿Querés recibir las últimas novedades antes que nadie?
-				<input type="checkbox" name="acepta" value="1"></div>
-				<input type="submit" value="ENVIAR FORMULARIO">
-				<input type="reset" value="RESETEAR">
-			</form>
-		</article>
-	</section>
-    <footer class="main-footer">
-        <div class="padre">
-            <div class="navegacion">
-                <h4>NAVEGACION</h4>
-                <ul>
-                    <li>Home</li>
-                    <li>Cine</li>
-                    <li>Series</li>
-                    <li>Quienes Somos</li>
-                    <li>Contacto</li>
-                </ul>
-            </div>
-            <div class="redes">
-                <h4>REDES SOCIALES</h4>
-                <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>X</li>
-                </ul>
-            </div>
+    <main>
+      <section class="sectionContacto">
+        <h1>CONTACTÁNOS</h1>
+        <div class="parrafoContacto">
+          <p>Si queres recibir las últimas novedades completa el siguiente formulario.
+          </p>
         </div>
-    </footer>
+        <div class="sectionMap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53567.31943842806!2d-60.73165875186967!3d-32.95213239191723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1662174131592!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <form class="row g-3 needs-validation sectionFormulario" novalidate>
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+            Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+            Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">E-mail</label>
+            <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+            Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">País</label>
+            <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Argentina</option>
+            <option>Brasil</option>
+            <option>Chile</option>
+            <option>Mexico</option>
+            <option>Perú</option>
+            </select>
+            <div class="invalid-feedback">
+            Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Edad</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+            Please provide a valid zip.
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Acepto los términos y condiciones
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar formulario</button>
+          </div>
+          </form>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li>
+        <a href="../index.html">INICIO</a>
+      </li>
+      <li>
+        <a href="./cine.html">CINE</a>
+      </li>
+      <li>
+        <a href="./series.html">SERIES</a>
+      </li>
+      <li>
+        <a href="./quienes.html">QUIENES SOMOS</a>
+      </li>
+      <li>
+        <a href="./contacto.html">CONTACTO</a>
+      </li>
+    </ul>
+    <div class="footeRedes">
+      <div>
+        <img src="../img/facebook.webp.webp" alt="">
+      </div>
+      <div>
+        <img src="../img/instagram.webp.webp" alt="">
+      </div>
+      <div>
+        <img src="../img/twitter.png.png" alt="">
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
